@@ -11,7 +11,7 @@ jobs:
             - run: flake8 src tests --max-line-length=100
             - run: black --check src tests
             - name: Audit dependencies
-              run:
+              run: |
                 pip-install pip-audit
                 pip-audit -r requirements.txt
 
