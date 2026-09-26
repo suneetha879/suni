@@ -12,6 +12,6 @@ jobs:
             - run: black --check src tests
             - name: Audit dependencies
               run: |
-                pip-install pip-audit
+                pip install pip-audit
                 pip-audit -r requirements.txt
 
