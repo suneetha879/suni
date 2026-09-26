@@ -21,6 +21,8 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with flake8
         run: flake8 src texts --max-line-length=100
+
+        
       - name: Run tests
         run: pytest --junitxml=results.xml -v
       - name: Upload test results
